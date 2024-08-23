@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="div25">
+            <h4>Payment Methods</h4>
+            <div class="method one"><i class="fa-solid fa-credit-card"></i><a href="#" onclick="showDiv1()">Payment by
+                    card <span class="arrow">&#x2BC8;</span></a></div>
+            <div class="method"><i class="fa-solid fa-building-columns"></i><a href="#">Internet Banks <span
+                        class="arrow">&#x2BC8;</span></a>
+            </div>
+            <div class="method"><img src="upi.png" alt=""><a href="#" onclick="showDiv2()">UPI <span
+                        class="arrow">&#x2BC8;</span></a></div>
+        </div>
+        <div class="div50">
+            <div class="hero">
+                <div class="card payment-container">
+                    <form>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                        <button type="submit" onclick="openPopUp()">Pay Now</button>
+                    </form>
+                </div>
+                <div class="card upi">
+                    <div class="form-group">
+                        <label for="card-number">Enter your UPI ID</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="example@upi" required>
+                    </div>
+                    <button type="submit" onclick="openPopUp()">Pay Now</button>
+                    <h4>We support all UPI handles</h4>
+                    <div class="logos">
+                        <img src="https://iconape.com/wp-content/files/zp/114427/svg/whatsapp-logo-icon-png-svg.png">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dhBZE7nT5mncfOMynupq4104jqpdqIHN1w&s"
+                            alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQ3uhlEkLwNJ9Y6kjLphe_irfN1i9H1pCMw&s"
+                            class="gpay">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Amazon_Pay_logo.svg/2560px-Amazon_Pay_logo.svg.png"
+                            class="amazon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBSzuF0t4PuGV-wo0VRiX6drdfRqCOrkX-A&s"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div25">
+            <h4>Order Information</h4>
+            <div class="det">
+                <p>Ticket Price</p>
+                <p>199.50</p>
+            </div>
+            <h6>Total &nbsp; &#8377;199.50</h6>
+            <div class="secureImg">
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/029/908/578/original/secure-payment-credit-card-icon-with-shield-secure-transaction-stock-illustration-vector.jpg">
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5BcieC8kX7-5P_4om8_pBdm3Vhu6wLd6pg&s"
+                    class="axisImg">
+            </div>
+        </div>
+    </div>
+    <div class="popUp" id="popUp">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAIClLAy_95k0lnsJPztgXtUckJaWDDAAA6A&s" alt="">
+        <h2>Payment Successful</h2>
+        <p>Your ticket booking is successful.</p>
+        <button type="button" onclick="closePopUp()">Okay</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

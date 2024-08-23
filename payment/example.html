@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Divs Example</title>
+    <style>
+        .content {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function showDiv1() {
+            document.querySelector('.div1').classList.add('visible');
+            document.querySelector('.div2').classList.remove('visible');
+        }
+
+        function showDiv2() {
+            document.querySelector('.div1').classList.remove('visible');
+            document.querySelector('.div2').classList.add('visible');
+        }
+
+        window.onload = showDiv1; // Show div1 by default on page load
+    </script>
+</head>
+
+<body>
+    <button onclick="showDiv1()">Show Div 1</button>
+    <button onclick="showDiv2()">Show Div 2</button>
+
+    <div class="content div1">
+        <h1>Div 1 Heading</h1>
+        <p>This is the content of div 1.</p>
+        <button>Button in Div 1</button>
+    </div>
+
+    <div class="content div2">
+        <h1>Div 2 Heading</h1>
+        <p>This is the content of div 2.</p>
+        <button>Button in Div 2</button>
+    </div>
+</body>
+
+</html>

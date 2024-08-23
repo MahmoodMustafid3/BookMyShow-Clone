@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.seat {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 1px solid #1ea83c;
+    color: #1ea83c;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.Selected {
+    height: 25px;
+    width: 25px;
+    background-color: #1ea83c;
+    border-radius: 2px;
+    border: 1px solid #1ea83c;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Booked {
+    height: 25px;
+    width: 25px;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    border: 1px solid #EEEEEE;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+/* .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.showcase {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 300px;
+    padding-left: 0;
+}
+
+.showcase li small {
+    margin-left: 8px;
+    font-size: 15px;
+    color: #666;
+}
+
+
+.screen {
+    margin-top: 35px;
+}
+
+#totalPriceBtn {
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #d8a013;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: none;
+
+}
+
+.payBtnShow {
+    display: inline !important;
+}
+
+h5 {
+    text-align: left;
+    margin: 0;
+    padding-top: 20px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.eye {
+    padding-top: 10px;
+}
+
+.screen img {
+    width: 250px;
+    height: 24px;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat:not(.Booked):hover {
+    cursor: pointer;
+    background-color: #1ea83c;
+    color: white;
+
+}
+
+.letter {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #999999;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding-right: 50px;
+}
+
+.name {
+    display: flex;
+    align-items: left;
+    margin: 15px 43px 5px 43px;
+}
+
+.name p {
+    margin: 0;
+}
+
+.name .circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showTime {
+    background-color: #f5f5fa;
+    margin-top: 20px;
+}
+
+.oneBtn {
+    margin-left: 43px !important;
+}
+
+.header {
+    border-bottom: 1px solid #e7e6e6;
+}
+
+.Btn {
+    margin: 10px 5px;
+    color: #2dc492;
+    border: 1px solid #2dc492;
+    background-color: white;
+    font-size: 12px;
+    padding: 5px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.clickBtn {
+    color: white !important;
+    background-color: #2dc492;
+    border: 1px solid #2dc492 !important;
+}
+
+.orangeBtn {
+    color: #f60;
+    border: 1px solid #f60;
+}
+
+.header h5 {
+    margin-left: 43px;
+    padding-top: 0;
+    color: #666666;
+    font-size: 12px;
+}
+
+.remain {
+    /* width: 130px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.remain p {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 4px 8px;
+    background: #1f2533;
+    border: 1px solid #1f2533;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+
+.seatSmall {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 1px solid #1ea83c;
+    color: #1ea83c;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectedSmall {
+    height: 15px;
+    width: 15px;
+    background-color: #1ea83c;
+    border-radius: 2px;
+    border: 1px solid #1ea83c;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.soldSmall {
+    height: 15px;
+    width: 15px;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    border: 1px solid #EEEEEE;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

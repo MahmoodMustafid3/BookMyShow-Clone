@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.div25 {
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.div25 .one {
+    margin-top: 40px;
+}
+
+.method {
+    margin-top: 15px;
+}
+
+.method a {
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+
+.method:hover {
+    color: #61b752;
+}
+
+.method a:hover {
+    color: #61b752;
+}
+
+.div50 {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.method img {
+    height: 20px;
+    width: 15px;
+    padding-top: 2px;
+}
+
+.method .arrow {
+    font-size: 0.75rem;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.upi {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.logos {
+    width: 100%;
+    height: 80px;
+}
+
+.upi h4 {
+    padding: 45px 0 10px 0;
+    color: rgb(64, 64, 64);
+}
+
+.logos img {
+    height: 20px;
+    width: 60px;
+    margin: 10px;
+}
+
+.amazon {
+    height: 15px !important;
+    width: 50px !important;
+}
+
+.gpay {
+    height: 15px !important;
+    width: 40px !important;
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.visible {
+    display: block;
+}
+
+.div25 .det {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.div25 h6 {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 6px;
+    border-top: 1px solid red;
+    padding-top: 10px;
+}
+
+.div25 .secureImg img {
+    height: 60px;
+    width: 100px;
+    text-align: center;
+}
+
+.secureImg {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.axisImg {
+    height: 25px !important;
+    width: 80px !important;
+}
+
+/* popup */
+
+
+
+
+.popUp {
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.openPopUp {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUp img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popUp h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popUp button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

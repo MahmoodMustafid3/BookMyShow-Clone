@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #efecec;
+}
+
+.container {
+    width: 350px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+
+    /* border: 1px solid rgb(210, 210, 210); */
+}
+
+.header {
+    padding: 20px;
+}
+
+.footer {
+    padding: 0 20px;
+}
+.footer h2{
+    margin-bottom: 15px;
+}
+.unpaid{
+    color: red;
+}
+
+.name pre {
+    font-size: 12px;
+}
+
+.name h2 {
+    font-size: 18px;
+}
+
+.name .ticketNum {
+    text-align: center;
+    margin-left: 250px;
+}
+
+.detail {
+    margin-top: 20px;
+}
+
+.detail p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: grey;
+}
+
+.time {
+    margin-top: 20px;
+    color: rgb(73, 73, 73);
+}
+
+.time p {
+    font-size: 14px;
+}
+
+.time h5 {
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.line {
+    border-bottom: 1px dotted grey;
+}
+
+.price {
+    display: flex;
+    /* margin-top: 50px; */
+    align-items: center;
+}
+
+.price p {
+    font-size: 14px;
+    color: grey;
+}
+
+.price h5 {
+    font-size: 17px;
+    margin-left: 155px;
+    font-weight: normal;
+    color: rgb(73, 73, 73);
+}
+
+.addPrice {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.addPrice p {
+    font-size: 14px;
+    color: grey;
+}
+
+.addPrice h6 {
+    font-size: 14px;
+    margin-left: 111px;
+    font-weight: normal;
+    color: rgb(73, 73, 73);
+}
+
+.amount {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 12px;
+    background-color: rgb(255, 244, 227);
+}
+
+.amount p {
+    font-size: 14px;
+    color: grey;
+}
+
+.amount h3 {
+    font-size: 20px;
+    margin-left: 100px;
+    color: black;
+}
+
+.divider {
+    border-top: 3px dotted grey;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.design {
+    display: flex;
+}
+
+.design .circle1 img {
+    width: 15px;
+    height: 30px;
+}
+
+.design .circle2 img {
+    width: 15px;
+    height: 30px;
+}
+button{
+    color:white;
+    background-color: rgb(75, 120, 7);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    width: 100%;
+}
